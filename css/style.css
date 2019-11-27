@@ -1,5 +1,6 @@
 body{
-background-image: image();
+background-image: image()
+
 }
 
 
@@ -9,11 +10,12 @@ background-color: ;
 
 
 .container{
-background-color: ;
+background-color: ; 
 }
 
 
 
 .row{
 background-color: ;
+font-weight: bold;
 }

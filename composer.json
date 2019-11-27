@@ -1,0 +1,6 @@
+{
+    "name": "vagrant/html",
+    "require": {
+        "twig/twig": "^3.0"
+    }
+}
