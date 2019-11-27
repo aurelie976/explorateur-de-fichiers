@@ -1,21 +1,49 @@
 body{
-background-image: image()
-
+background-image: url(../media/paysage.jpg);
 }
 
-
-section{
-background-color: ;
+/* système de grille */
+.d-flex{
+    display: flex;
 }
 
-
-.container{
-background-color: ; 
+.info-container{
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
 }
 
+.info-container-bg-color{
+    background-color: #2a424f;
+}
 
+button{
+    width:30px;
+    height:30px;
+    background-color: transparent;
+    border-color: transparent;
+}
 
-.row{
-background-color: ;
-font-weight: bold;
+.home-icone{
+    width:20px;
+    height: 20px;
+}
+
+.before-icone{
+    width:15px;
+    height: 15px;
+}
+
+.next-icone{
+    width:15px;
+    height: 15px;
+}
+
+.folders-container-bg-color{
+    background-color: #41677c;
+}
+
+.folders-container{
+    min-height: 600px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
