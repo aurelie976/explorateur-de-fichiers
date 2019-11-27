@@ -5,53 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <meta name="author" content="Dédirée, Anthony, Eric, Aurélie ">
-    <meta name="category" content="Explorateur de fichiers">
-    <meta name="Keywords" content="Divers dossiers, page HTML, Page PHP">
-
-    <meta property="og:title" content="Explorateur de fichiers">
-    <meta property="og:description" content="Divers dossiers, page HTML, Page PHP">
-    <meta property="og:image" content="http://aurelien.promo-vesoul33.codeur.online/restaurant/media/restaurant.jpg">
-    <meta property="og:url" content="http://aurelien.promo-vesoul33.codeur.online/restaurant/">
-
-    <meta name="twitter:title" content="Explorateur de fichiers">
-    <meta name="twitter:description" content="Divers dossiers, page HTML, Page PHP">
-    <meta name="twitter:image" content="http://aurelien.promo-vesoul33.codeur.online/restaurant/media/restaurant.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="http://aurelien.promo-vesoul33.codeur.online/restaurant/">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <title>Explorateur de fichiers</title>
 </head>
 
-<body img src="media/paysage.jpg" alt="paysage"> 
-    <section class="d-flex align-items-center">
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3">
-                        <div>
+<body>
 
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                        <div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+    <div class="container-fluid mt-5 pt-5 mt-sm-5 pt-sm-5 mt-md-5 pt-md-5 mt-lg-5 pt-lg-5 mt-xl-5 pt-xl-5">
+        <div class="container info-container info-container-bg-color mt-5 mt-sm-5 mt-md-5 mt-lg-5 mt-xl-5">
+            <div
+                class="row pt-4 pb-3 pl-3 pr-3 pt-sm-4 pb-sm-3 pl-sm-3 pr-sm-3 pt-md-4 pb-md-3 pl-md-3 pr-md-3 pt-lg-4 pb-lg-3 pl-lg-3 pr-lg-3 pt-xl-4 pb-xl-3 pl-xl-3 pr-xl-3">
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <div
+                        class="d-flex justify-content-between justify-content-sm-between justify-content-md-start justify-content-lg-start justify-content-xl-start mb-3">
+                        <button class="mr-3"><a href="#"><img class="home-icone" src="media/home.png"
+                                    alt="icone home"></a></button>
+                            <div>
+                                <button><a href=#><img class="before-icone" src="media/before.png"
+                                    alt="icone dossier parent"></a></button>
+                                <button><a href=#><img class="next-icone" src="media/next.png"
+                                    alt="icone dossier enfant"></a></button>
+                            </div>
                         
-                        </div>
                     </div>
                 </div>
+
+                <div
+                    class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 d-flex justify-content-center justify-content-sm-start justify-content-md-start justify-content-lg-start justify-content-xl-start">
+                    <input type="search" id="site-search" class="input-search" name="q" aria-label="Search through site content" placeholder="Recherche">
+
+                    <button class="text-white"><img class=" recherche mt-1" src="media/recherche.png"> </button>
+
+
+                </div>
+
+                <div
+                    class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center justify-content-sm-end justify-content-md-end justify-content-lg-end justify-content-xl-end">
+
+                    <div class="realpath"></div>
+
+                </div>
+
             </div>
         </div>
-    </section>  
+    </div>
+
+    <div class="container-fluid mb-5 pb-5 mb-sm-5 pb-sm-5 mb-md-5 pb-md-5 mb-lg-5 pb-lg-5 mb-xl-5 pb-xl-5">
+        <div class="container folders-container folders-container-bg-color">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex align-content-start flex-wrap">
+                    <a href="" class="text-center folder-link">...</a>
+                    <a href="" class="text-center folder-link">...</a>
+                    <a href="" class="text-center folder-link">...</a>
+                    <a href="" class="text-center folder-link">...</a>
+                    <a href="" class="text-center folder-link">...</a>
+                    <a href="" class="text-center folder-link">...</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
