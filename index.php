@@ -8,6 +8,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <meta name="author" content="Dédirée, Anthony, Eric, Aurélie ">
+    <meta name="category" content="Explorateur de fichiers">
+    <meta name="Keywords" content="Divers dossiers, page HTML, Page PHP">
+
+    <meta property="og:title" content="Explorateur de fichiers">
+    <meta property="og:description" content="Divers dossiers, page HTML, Page PHP">
+    <meta property="og:image" content="http://aurelien.promo-vesoul33.codeur.online/restaurant/media/restaurant.jpg">
+    <meta property="og:url" content="http://aurelien.promo-vesoul33.codeur.online/restaurant/">
+
+    <meta name="twitter:title" content="Explorateur de fichiers">
+    <meta name="twitter:description" content="Divers dossiers, page HTML, Page PHP">
+    <meta name="twitter:image" content="http://aurelien.promo-vesoul33.codeur.online/restaurant/media/restaurant.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="http://aurelien.promo-vesoul33.codeur.online/restaurant/">
+
     <title>Explorateur de fichiers</title>
 </head>
 
