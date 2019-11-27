@@ -17,26 +17,23 @@
         <div class="container info-container info-container-bg-color mt-5 mt-sm-5 mt-md-5 mt-lg-5 mt-xl-5">
             <div
                 class="row pt-4 pb-3 pl-3 pr-3 pt-sm-4 pb-sm-3 pl-sm-3 pr-sm-3 pt-md-4 pb-md-3 pl-md-3 pr-md-3 pt-lg-4 pb-lg-3 pl-lg-3 pr-lg-3 pt-xl-4 pb-xl-3 pl-xl-3 pr-xl-3">
-                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3">
                     <div
-                        class="d-flex justify-content-between justify-content-sm-between justify-content-md-start justify-content-lg-start justify-content-xl-start mb-3">
+                        class="d-flex justify-content-center  justify-content-sm-start justify-content-md-start justify-content-lg-start justify-content-xl-start">
                         <button class="mr-3"><a href="#"><img class="home-icone" src="media/home.png"
                                     alt="icone home"></a></button>
-                            <div>
-                                <button><a href=#><img class="before-icone" src="media/before.png"
+                        <button><a href=#><img class="before-icone" src="media/before.png"
                                     alt="icone dossier parent"></a></button>
-                                <button><a href=#><img class="next-icone" src="media/next.png"
+                        <button><a href=#><img class="next-icone" src="media/next.png"
                                     alt="icone dossier enfant"></a></button>
-                            </div>
-                        
                     </div>
                 </div>
 
                 <div
-                    class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 d-flex justify-content-center justify-content-sm-start justify-content-md-start justify-content-lg-start justify-content-xl-start">
-                    <input type="search" id="site-search" class="input-search" name="q" aria-label="Search through site content" placeholder="Recherche">
+                    class="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5 d-flex justify-content-center justify-content-sm-start justify-content-md-start justify-content-lg-start justify-content-xl-start">
+                    <input type="search" id="site-search" name="q" aria-label="Search through site content">
 
-                    <button class="text-white"><img class=" recherche mt-1" src="media/recherche.png"> </button>
+                    <button class="text-white">Recherche</button>
 
 
                 </div>
@@ -52,7 +49,7 @@
         </div>
     </div>
 
-    <div class="container-fluid mb-5 pb-5 mb-sm-5 pb-sm-5 mb-md-5 pb-md-5 mb-lg-5 pb-lg-5 mb-xl-5 pb-xl-5">
+    <div class="container-fluid">
         <div class="container folders-container folders-container-bg-color">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex align-content-start flex-wrap">
