@@ -8,7 +8,8 @@ $page=array('site', 'css' , 'scss,' ,'js' ,'', 'media');
       // foreach (new DirectoryIterator($base) as $fileInfo) {
           if (isset($_GET['d']) )
           {
-               $url=strip_tags($_GET['d']).$fileInfo->getFilename();
+            $url=$fileInfo->getFilename();
+              // $url=strip_tags($_GET['d']).$fileInfo->getFilename();
         }
           else{
               $url=$fileInfo->getFilename();
@@ -18,7 +19,7 @@ $page=array('site', 'css' , 'scss,' ,'js' ,'', 'media');
                 
            
               
-          echo  "<a href='?d=".$url."'>". $fileInfo->getFilename() . "</a><br>\n";
+          echo  "<a href='?d=".$url."'>". $fileInfo->getFilename() . "<img src='media/folder.png' ></a><br>\n";
          
       }
       }
@@ -31,32 +32,35 @@ $page=array('site', 'css' , 'scss,' ,'js' ,'', 'media');
 
 
 // } 
+function home($iterator){
+
+}
 
 function nextdossier($iterator){
-    echo "<a href='" . $iterator->next()."'>next</a>";
+    //echo "<a href='" . $iterator->next()."'>next</a>";
  
 }
 
 function precdossier($iterator){
-   echo "prec" .$iterator->key();
+   //echo "prec" .$iterator->key();
 }
 
 
 function listfichier($iterator ){
         
     $extFiles = array(
-        '' => "/media/00.png",
-        'doc' => "/media/doc.png",
-        'xls' => "/media/doc.png",
-        'ppt' => "/media/doc.png",
-        'pdf' => "/media/doc.png",
-        'zip' => "/media/doc.png",
-        'txt' => "/media/doc.png",
-        'php' => "/media/03.png",
-        'gif' => "/media/doc.png",
+           '' => "/media/00.png",
+        'doc' => "/media/01.png",
+        'xls' => "/media/02.png",
+        'ppt' => "/media/03.png",
+        'pdf' => "/media/01.png",
+        'zip' => "/media/01.png",
+        'txt' => "/media/01.png",
+        'php' => "/media/icone-php.png",
+        'gif' => "/media/03.png",
         'jpg' => "/media/01.png",
-        'png' => "/media/doc.png",
-        'html' => "/media/03.png",
+        'png' => "/media/02.png",
+        'html' => "/media/icone-html.png",
         'css' => "/media/02.png",
         'js' => "/media/01.png"
     );
@@ -95,7 +99,7 @@ if (isset($_GET['d']) ){
         $geturl='';
     
     }
-    
+    /*
 // controle 
 if ( in_array($geturl, $page ) && file_exists("/var/www/html/site/". $geturl )){
 //
@@ -115,4 +119,4 @@ if ( in_array($geturl, $page ) && file_exists("/var/www/html/site/". $geturl )){
 }else{
 
     echo "not found";
-}
+}*/
