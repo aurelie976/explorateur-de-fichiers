@@ -16,7 +16,7 @@ $page=array('site', 'css' , 'scss,' ,'js' ,'', 'media');
         }
           if($fileInfo->isDir()){
                  
-        echo  "<a href='?d=".$url."'>". $fileInfo->getFilename() . "<img src='media/folder.png' class='icone-fichier'></a><br>\n";
+        echo  "<a text-decoration-none href='?d=".$url."'>". $fileInfo->getFilename() . "<img src='media/folder.png' class='icone-fichier'></a><br>\n";
           
          
       }
@@ -73,7 +73,7 @@ function listfichier($iterator ){
             if(array_key_exists($fileinfo->getExtension() , $extFiles )) {
                 //var_dump(array_key_exists($fileinfo->getExtension() , $extFiles  ));
             // echo "ok <br>";
-            echo "<p><img src=".$extFiles[$fileinfo->getExtension()].">". $fileinfo->getFilename()."</p>";
+            echo "<p><img class='file-size pt-2 ml-2 pt-sm-2 ml-sm-4 pt-md-2 ml-md-4 pt-lg-2 ml-lg-4 pt-xl-2 ml-xl-4' src=".$extFiles[$fileinfo->getExtension()].">". $fileinfo->getFilename()."</p>";
             } else {
             // echo "no <br>";
             // var_dump(array_key_exists($fileinfo->getExtension() , $extFiles  ));
