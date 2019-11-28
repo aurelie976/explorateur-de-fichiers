@@ -15,11 +15,9 @@ $page=array('site', 'css' , 'scss,' ,'js' ,'', 'media');
               $url=$fileInfo->getFilename();
         }
           if($fileInfo->isDir()){
-           
-                
-           
-              
-          echo  "<a href='?d=".$url."'>". $fileInfo->getFilename() . "<img src='media/folder.png' ></a><br>\n";
+                 
+        echo  "<a href='?d=".$url."'>". $fileInfo->getFilename() . "<img src='media/folder.png' class='icone-fichier'></a><br>\n";
+          
          
       }
       }

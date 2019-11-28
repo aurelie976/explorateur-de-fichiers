@@ -4,7 +4,7 @@ if ( in_array($geturl, $page ) && file_exists("/var/www/html/site/". $geturl )){
   $iterator = new DirectoryIterator($base);
   echo $iterator->getPath();
 }
-  ?>
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,8 +27,11 @@ if ( in_array($geturl, $page ) && file_exists("/var/www/html/site/". $geturl )){
                 <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3">
                     <div
                         class="d-flex justify-content-center  justify-content-sm-start justify-content-md-start justify-content-lg-start justify-content-xl-start">
-                        <button class="mr-3"><a href="#"><img class="home-icone" src="media/home.png"
-                                    alt="icone home"></a></button>
+                       
+                        <button class="mr-3">
+                        <?php echo '<a href="index.php"><img class="home-icone" src="media/home.png" alt="icone home"/></a>';?>
+                        </button>
+
                         <button><a href=#><img class="before-icone" src="media/before.png"
                                     alt="icone dossier parent"></a></button>
                         <button><a href=#><img class="next-icone" src="media/next.png"
@@ -59,10 +62,10 @@ if ( in_array($geturl, $page ) && file_exists("/var/www/html/site/". $geturl )){
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid mb-5 pb-5 mb-sm-5 pb-sm-5 mb-md-5 pb-md-5 mb-lg-5 pb-lg-5 mb-xl-5 pb-xl-5">
         <div class="container folders-container folders-container-bg-color">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex align-content-start flex-wrap">
+                <div class="col-12 pt-5 pl-5 pr-5 col-sm-12 pt-sm-5 pl-sm-5 pr-sm-5 col-md-12 pt-md-5 pl-md-5 pr-md-5 col-lg-12 pt-lg-5 pl-lg-5 pr-lg-5 col-xl-12 pt-xl-5 pl-xl-5 pr-xl-5 d-flex align-content-start flex-wrap">
                  <?php
 if ( in_array($geturl, $page ) && file_exists("/var/www/html/site/". $geturl )){
                  listdirectory($iterator);
