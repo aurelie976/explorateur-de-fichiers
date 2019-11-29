@@ -1,5 +1,5 @@
 <?php
-$page=array('site', 'css' , 'scss,' ,'js' ,'', 'media', 'media/nouveau');
+ $page=array('site', 'css' , 'scss,' ,'js' ,'', 'media', 'media/nouveau');
 
 
 function listdirectory($iterator){
@@ -8,16 +8,16 @@ function listdirectory($iterator){
           if (isset($_GET['d']) )
           {
             // $url=$fileInfo->getFilename();
-              $url=strip_tags($_GET['d'])."/".$fileInfo->getFilename();
+               $url=strip_tags($_GET['d'])."/".$fileInfo->getFilename();
         }
           else{
               $url=$fileInfo->getFilename();
         }
-          if($fileInfo->isDir()){
+           if($fileInfo->isDir()){
 
-        echo "<div class='d-flex flex-column text-center mb-5'>";
-        echo "<a href='?d=".$url."'><img src='media/folder.png' class='icone-fichier text-decoration-none mr-4 ml-4 mr-sm-4 ml-sm-4 mr-md-4 ml-md-4 mr-lg-4 ml-lg-4 mr-xl-4 ml-xl-4'></a>\n ". $fileInfo->getFilename();
-        echo" </div>";
+         echo "<div class='d-flex flex-column text-center mb-5'>";
+         echo "<a href='?d=".$url."'><img src='media/folder.png' class='icone-fichier text-decoration-none mr-4 ml-4 mr-sm-4 ml-sm-4 mr-md-4 ml-md-4 mr-lg-4 ml-lg-4 mr-xl-4 ml-xl-4'></a>\n ". $fileInfo->getFilename();
+         echo" </div>";
                 
     }
     }
@@ -36,7 +36,7 @@ function home($iterator){
 
 function nextdossier($iterator){
     if (isset($_GET['d'])){
-        echo ' onclick=javascript:history.go(+1)';
+         echo ' onclick=javascript:history.go(+1)';
        }
  
 }
@@ -59,7 +59,7 @@ function precdossier(){
      echo ' javascript:history.go(-1)' ;
        }*/
        if (isset($_GET['d'])){
-        echo ' onclick=javascript:history.go(-1)';
+       echo ' onclick=javascript:history.go(-1)';
        }
  }
 
@@ -92,10 +92,10 @@ function listfichier($iterator ){
             // print_r($fileinfo->getExtension());
             if(array_key_exists($fileinfo->getExtension() , $extFiles )) {
                 //var_dump(array_key_exists($fileinfo->getExtension() , $extFiles  ));
-            // echo "ok <br>";
-            echo "<div class='d-flex flex-column text-center mb-5'>";
-            echo "<p><img class='file-size mr-4 ml-4 pt-1 mr-sm-4 ml-sm-4 pt-sm-1 mr-md-4 ml-md-4 pt-md-1 mr-lg-4 ml-lg-4 pt-lg-1 mr-xl-4 ml-xl-4 pt-xl-1' src=".$extFiles[$fileinfo->getExtension()]."></p>". $fileinfo->getFilename();
-            echo" </div>";
+             echo "ok <br>";
+             echo "<div class='d-flex flex-column text-center mb-5'>";
+             echo "<p><img class='file-size mr-4 ml-4 pt-1 mr-sm-4 ml-sm-4 pt-sm-1 mr-md-4 ml-md-4 pt-md-1 mr-lg-4 ml-lg-4 pt-lg-1 mr-xl-4 ml-xl-4 pt-xl-1' src=".$extFiles[$fileinfo->getExtension()]."></p>". $fileinfo->getFilename();
+             echo" </div>";
 
             } else {
             // echo "no <br>";

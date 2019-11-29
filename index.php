@@ -1,8 +1,8 @@
 <?php require 'fonction.php';
 if ( in_array($geturl, $page ) && file_exists("/var/www/html/site/". $geturl )){
-    //  $base="/var/www/html/site/";
+    // $base="/var/www/html/site/";
   $iterator = new DirectoryIterator($base);
-  echo $iterator->getPath();
+//   echo $iterator->getPath();
 }
 ?>
 <!DOCTYPE html>
