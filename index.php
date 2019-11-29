@@ -44,9 +44,9 @@ if ( in_array($geturl, $page ) && file_exists("/var/www/html/site/". $geturl )){
 
                 <div
                     class="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5 d-flex justify-content-center justify-content-sm-start justify-content-md-start justify-content-lg-start justify-content-xl-start">
-                    <input type="search" id="site-search" name="q" aria-label="Search through site content">
+                    <input type="search" id="site-search" name="q" aria-label="Search through site content" placeholder="Recherche">
 
-                    <button class="text-white">Recherche</button>
+                    <button class="text-white"></button>
 
 
                 </div>
