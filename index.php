@@ -2,7 +2,11 @@
 if ( in_array($geturl, $page ) && file_exists("/var/www/html/site/". $geturl )){
     // $base="/var/www/html/site/";
   $iterator = new DirectoryIterator($base);
+<<<<<<< HEAD
 //   echo $iterator->getPath();
+=======
+ // echo $iterator->getPath();
+>>>>>>> 0cac22fbc1177b7cb6576bc39d2660ec3de050ba
 }
 ?>
 <!DOCTYPE html>
@@ -35,7 +39,7 @@ if ( in_array($geturl, $page ) && file_exists("/var/www/html/site/". $geturl )){
                                     alt="icone dossier parent"></a>
                               
                                 </button>
-                                <button><a href='#' ><img class="next-icone" src="media/next.png"
+                                <button <?php nextdossier() ?>><a href='#' ><img class="next-icone" src="media/next.png"
                                     alt="icone dossier enfant"></a></button>
                             </div>
                         
@@ -55,9 +59,12 @@ if ( in_array($geturl, $page ) && file_exists("/var/www/html/site/". $geturl )){
                 <div
                     class="col-12 d-none col-sm-4 d-sm-none col-md-4 d-md-flex col-lg-4 d-lg-flex col-xl-4 d-xl-flex justify-content-center justify-content-sm-end justify-content-md-end justify-content-lg-end justify-content-xl-end">
 
-                    <div class="realpath"><?php  $iterato = new FilesystemIterator(__DIR__, FilesystemIterator::CURRENT_AS_PATHNAME); 
+                    <div class="realpath"><?php  //$iterato = new FilesystemIterator(__DIR__, FilesystemIterator::CURRENT_AS_PATHNAME); 
 
-    echo $iterato->current() . "\n";
+   // echo $iterato->current() . "\n"; //
+
+   //
+   // echo $iterator->getPath();
  ?></div>
 
                 </div>

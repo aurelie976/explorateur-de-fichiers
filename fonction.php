@@ -13,12 +13,14 @@ function listdirectory($iterator){
           else{
               $url=$fileInfo->getFilename();
         }
-           if($fileInfo->isDir()){
+          if($fileInfo->isDir()  ){
 
-         echo "<div class='d-flex flex-column text-center mb-5'>";
-         echo "<a href='?d=".$url."'><img src='media/folder.png' class='icone-fichier text-decoration-none mr-4 ml-4 mr-sm-4 ml-sm-4 mr-md-4 ml-md-4 mr-lg-4 ml-lg-4 mr-xl-4 ml-xl-4'></a>\n ". $fileInfo->getFilename();
-         echo" </div>";
-                
+if($fileInfo->getFilename() =='.' OR $fileInfo->getFilename() =='..'){   continue;    }
+
+        echo "<div class='d-flex flex-column text-center mb-5'>";
+        echo "<a href='?d=".$url."'><img src='media/folder.png' class='icone-fichier text-decoration-none mr-4 ml-4 mr-sm-4 ml-sm-4 mr-md-4 ml-md-4 mr-lg-4 ml-lg-4 mr-xl-4 ml-xl-4'></a>\n ". $fileInfo->getFilename();
+        echo" </div>";
+         
     }
     }
   
@@ -34,7 +36,7 @@ function home($iterator){
 
 }
 
-function nextdossier($iterator){
+function nextdossier(){
     if (isset($_GET['d'])){
          echo ' onclick=javascript:history.go(+1)';
        }
@@ -113,7 +115,7 @@ $base2="/var/www/html/site/";
 if (isset($_GET['d']) ){
     $geturl=strip_tags($_GET['d']);
     $base='/var/www/html/site/'.$geturl;
-    echo $geturl;
+    //echo $geturl;
 }
     else{
 
