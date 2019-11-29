@@ -2,7 +2,7 @@
 if ( in_array($geturl, $page ) && file_exists("/var/www/html/site/". $geturl )){
     //  $base="/var/www/html/site/";
   $iterator = new DirectoryIterator($base);
-  echo $iterator->getPath();
+//   echo $iterator->getPath();
 }
 ?>
 <!DOCTYPE html>
@@ -43,7 +43,7 @@ if ( in_array($geturl, $page ) && file_exists("/var/www/html/site/". $geturl )){
                 </div>
 
                 <div
-                    class="col-12 col-sm-12 mt-sm-2 col-md-5 col-lg-5 col-xl-5 d-flex justify-content-center justify-content-sm-center justify-content-md-start justify-content-lg-start justify-content-xl-start">
+                    class="col-12 mt-2 col-sm-12 mt-sm-2 col-md-5 mt-md-0 col-lg-5 mt-lg-0 col-xl-5 mt-xl-0 d-flex justify-content-center justify-content-sm-center justify-content-md-start justify-content-lg-start justify-content-xl-start">
                     <input type="search" id="site-search" name="q" aria-label="Search through site content"
                         placeholder="Recherche" class="input-search">
 
