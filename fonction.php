@@ -2,31 +2,29 @@
 $page=array('site', 'css' , 'scss,' ,'js' ,'', 'media', 'media/nouveau');
 
 
-
-  function listdirectory($iterator){
+function listdirectory($iterator){
     foreach ($iterator as $fileInfo) {
       // foreach (new DirectoryIterator($base) as $fileInfo) {
           if (isset($_GET['d']) )
           {
-           // $url=$fileInfo->getFilename();
-               $url=strip_tags($_GET['d']).$fileInfo->getFilename();
+            // $url=$fileInfo->getFilename();
+              $url=strip_tags($_GET['d'])."/".$fileInfo->getFilename();
         }
           else{
               $url=$fileInfo->getFilename();
         }
-          if($fileInfo->isDir()){
-           
-                
-           
-              
-          echo  "<a href='?d=".$url."'>". $fileInfo->getFilename() . "<img src='media/folder.png' ></a><br>\n";
+
+
+
+            
+        if($fileInfo->isDir()){
+                 
+        echo  "<a text-decoration-none href='?d=".$url."'>". $fileInfo->getFilename() . "<img src='media/folder.png' class='icone-fichier'></a><br>\n";
+          
          
       }
       }
-  
-  
-  
-  }
+   }
 
 // function verifurl($url){
 
@@ -95,7 +93,7 @@ function listfichier($iterator ){
             if(array_key_exists($fileinfo->getExtension() , $extFiles )) {
                 //var_dump(array_key_exists($fileinfo->getExtension() , $extFiles  ));
             // echo "ok <br>";
-            echo "<p><img src=".$extFiles[$fileinfo->getExtension()].">". $fileinfo->getFilename()."</p>";
+            echo "<p><img class='file-size pt-2 ml-2 pt-sm-2 ml-sm-4 pt-md-2 ml-md-4 pt-lg-2 ml-lg-4 pt-xl-2 ml-xl-4' src=".$extFiles[$fileinfo->getExtension()].">". $fileinfo->getFilename()."</p>";
             } else {
             // echo "no <br>";
             // var_dump(array_key_exists($fileinfo->getExtension() , $extFiles  ));
@@ -106,7 +104,7 @@ function listfichier($iterator ){
         }
     }
 }
-
+    //  $base="/var/www/html/site/";
 $base="/var/www/html/site/";
 $base2="/var/www/html/site/";
 if (isset($_GET['d']) ){
