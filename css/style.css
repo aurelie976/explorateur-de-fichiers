@@ -38,6 +38,11 @@ button{
     height: 15px;
 }
 
+.recherche{
+    width:30px;
+    height: 30px;
+}
+
 .folders-container-bg-color{
     background-color: #41677c;
 }
@@ -46,4 +51,32 @@ button{
     min-height: 600px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+}
+
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .input-search{
+        width:90%;
+    }  
+
+    .recherche{
+        width:20px;
+        height:20px;
+        margin-bottom: 10px;
+    } 
+}
+
+
+@media (max-width: 575.98px) {
+    .input-search{
+        width:90%;
+    }
+    
+    .recherche{
+        width:20px;
+        height:20px;
+        margin-bottom: 5px;
+    }
+
 }

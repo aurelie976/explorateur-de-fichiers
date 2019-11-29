@@ -1,8 +1,4 @@
 {
-<<<<<<< HEAD
-    "name": "vagrant/html",
-=======
->>>>>>> 65c708065edd2f369a22a9e4180e89b913279697
     "require": {
         "twig/twig": "^3.0"
     }

@@ -1,5 +1,5 @@
 <?php
-$page=array('site', 'css' , 'scss,' ,'js' ,'', 'media');
+$page=array('site', 'css' , 'scss,' ,'js' ,'', 'media', 'media/nouveau');
 
 
 
@@ -8,8 +8,8 @@ $page=array('site', 'css' , 'scss,' ,'js' ,'', 'media');
       // foreach (new DirectoryIterator($base) as $fileInfo) {
           if (isset($_GET['d']) )
           {
-            $url=$fileInfo->getFilename();
-              // $url=strip_tags($_GET['d']).$fileInfo->getFilename();
+           // $url=$fileInfo->getFilename();
+               $url=strip_tags($_GET['d']).$fileInfo->getFilename();
         }
           else{
               $url=$fileInfo->getFilename();
@@ -37,13 +37,33 @@ function home($iterator){
 }
 
 function nextdossier($iterator){
-    //echo "<a href='" . $iterator->next()."'>next</a>";
+    if (isset($_GET['d'])){
+        echo ' onclick=javascript:history.go(+1)';
+       }
  
 }
 
-function precdossier($iterator){
+function precdossier(){
    //echo "prec" .$iterator->key();
-}
+   //si il y a /.. dans get url on supprime par regex le block /xxxx/
+   //et on renvoie url 
+
+  // $chaine=strip_tags($_GET['d']);
+  // $trouve= '/..';
+  //  $position = strpos($chaine, $trouve);
+ /*  
+    if ($position === false) {
+        echo 'pas été trouvé dans la chaine';
+        } else
+        {
+       // echo ' a été trouvée dans la chaine';
+     //  retourn javascript
+     echo ' javascript:history.go(-1)' ;
+       }*/
+       if (isset($_GET['d'])){
+        echo ' onclick=javascript:history.go(-1)';
+       }
+ }
 
 
 function listfichier($iterator ){
