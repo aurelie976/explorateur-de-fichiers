@@ -38,6 +38,8 @@ button{
     height: 15px;
 }
 
+
+
 .recherche{
     width:30px;
     height: 30px;
@@ -78,7 +80,7 @@ button{
 
 @media (max-width: 575.98px) {
     .input-search{
-        width:90%;
+        width:80%;
     }
     
     .recherche{
