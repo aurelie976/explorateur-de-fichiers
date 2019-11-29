@@ -1,6 +1,6 @@
 <?php require 'fonction.php';
 if ( in_array($geturl, $page ) && file_exists("/var/www/html/site/". $geturl )){
-    // $base="/var/www/html/site/";
+    //  $base="/var/www/html/site/";
   $iterator = new DirectoryIterator($base);
   echo $iterator->getPath();
 }
@@ -27,13 +27,18 @@ if ( in_array($geturl, $page ) && file_exists("/var/www/html/site/". $geturl )){
                 <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
                     <div
                         class="d-flex justify-content-between justify-content-sm-between justify-content-md-start justify-content-lg-start justify-content-xl-start">
-
-                        <button class="mr-3"><?php echo '<a href="index.php"><img class="home-icone" src="media/home.png" alt="icone home"/></a>';?></button>
-                        <div>
-                            <button><a href=#><img class="before-icone" src="media/before.png" alt="icone dossier parent"></a></button>
-                            <button><a href=#><img class="next-icone" src="media/next.png" alt="icone dossier enfant"></a></button>
-                        </div>
-
+                        <button class="mr-3">
+                        <?php echo '<a href="index.php"><img class="home-icone" src="media/home.png" alt="icone home"/></a>';?>
+                        </button>
+                            <div>
+                                <button <?php precdossier() ?>><a href='#'   ><img class="before-icone" src="media/before.png"
+                                    alt="icone dossier parent"></a>
+                              
+                                </button>
+                                <button><a href='#' ><img class="next-icone" src="media/next.png"
+                                    alt="icone dossier enfant"></a></button>
+                            </div>
+                        
                     </div>
                 </div>
 
