@@ -1,5 +1,5 @@
 <?php
-$page=array('site', 'css' , 'scss,' ,'js' ,'', 'media', 'media/nouveau');
+$page=array('site', 'css' , 'scss' ,'js' ,'', 'media', 'media/nouveau');
 
 
 function listdirectory($iterator){
@@ -78,11 +78,11 @@ function listfichier($iterator ){
         'txt' => "/media/01.png",
         'php' => "/media/icone-php.png",
         'gif' => "/media/03.png",
-        'jpg' => "/media/01.png",
+        'jpg' => "/media/icone-jpg.png",
         'png' => "/media/02.png",
         'html' => "/media/icone-html.png",
-        'css' => "/media/02.png",
-        'js' => "/media/01.png"
+        'css' => "/media/icone-css.png",
+        'js' => "/media/icone-js.png"
     );
 
     //liste les fichiers
