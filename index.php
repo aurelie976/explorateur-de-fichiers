@@ -2,11 +2,7 @@
 if ( in_array($geturl, $page ) && file_exists("/var/www/html/site/". $geturl )){
     // $base="/var/www/html/site/";
   $iterator = new DirectoryIterator($base);
-<<<<<<< HEAD
 //   echo $iterator->getPath();
-=======
- // echo $iterator->getPath();
->>>>>>> 0cac22fbc1177b7cb6576bc39d2660ec3de050ba
 }
 ?>
 <!DOCTYPE html>

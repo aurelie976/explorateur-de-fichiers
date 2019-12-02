@@ -94,7 +94,7 @@ function listfichier($iterator ){
             // print_r($fileinfo->getExtension());
             if(array_key_exists($fileinfo->getExtension() , $extFiles )) {
                 //var_dump(array_key_exists($fileinfo->getExtension() , $extFiles  ));
-             echo "ok <br>";
+           
              echo "<div class='d-flex flex-column text-center mb-5'>";
              echo "<p><img class='file-size mr-4 ml-4 pt-1 mr-sm-4 ml-sm-4 pt-sm-1 mr-md-4 ml-md-4 pt-md-1 mr-lg-4 ml-lg-4 pt-lg-1 mr-xl-4 ml-xl-4 pt-xl-1' src=".$extFiles[$fileinfo->getExtension()]."></p>". $fileinfo->getFilename();
              echo" </div>";
